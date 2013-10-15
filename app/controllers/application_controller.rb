@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   private
   
   def current_cart
-    Cart.find(session[:cart_id]) #this is a test
+    Cart.find(session[:cart_id]) #this is a test f
   rescue ActiveRecord::RecordNotFound
     cart = Cart.create
     session[:cart_id] = cart.id
